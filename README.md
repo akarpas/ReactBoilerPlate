@@ -12,7 +12,7 @@ Start the development server with this command:
 ```
 npm start
 ```
- 
+
 
 Setup
 ---
