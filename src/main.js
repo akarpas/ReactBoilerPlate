@@ -1,6 +1,6 @@
-console.log("Hello World!");
+console.log("Hello World!")
 
-const path = require("path");
+const path = require("path")
 
 module.exports = {
   context: path.join(__dirname, "src"),
@@ -21,4 +21,4 @@ module.exports = {
   resolve: {
     modules: [path.join(__dirname, "node_modules")]
   }
-};
+}
