@@ -1,6 +1,5 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Counter from "./components/medium/Counter/Counter"
 import Home from "./components/page/Home"
 
 document.addEventListener("DOMContentLoaded", function() {
