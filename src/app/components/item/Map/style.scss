@@ -1,0 +1,11 @@
+.mapContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.map {
+  margin-top: 20px;
+  height: 375px;
+  width: 60%;
+}

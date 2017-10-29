@@ -2,6 +2,7 @@ import React from "react"
 import { connect } from "react-redux"
 import { Link } from "react-router-dom"
 import Header from "../../section/Header"
+import Map from "../../item/Map"
 import style from "./style.scss"
 
 class Home extends React.Component {
@@ -11,7 +12,12 @@ class Home extends React.Component {
   }
 
   render() {
-    return <Header />
+    return (
+      <div>
+        <Header />
+        <Map />
+      </div>
+    )
   }
 }
 
