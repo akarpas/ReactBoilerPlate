@@ -1,4 +1,7 @@
 import React from "react"
+import { connect } from "react-redux"
+import { Link } from "react-router-dom"
+import style from "./style.scss"
 
 class Counter extends React.Component {
   constructor() {

@@ -1,18 +1,27 @@
 const path = require("path")
 
 module.exports = {
-  context: path.join(__dirname, "src"),
+  context: path.join(__dirname, "src/app"),
   entry: ["./main.js"],
   output: {
     path: path.join(__dirname, "www"),
     filename: "bundle.js"
   },
   module: {
-    rules: [
+    loaders: [
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        exclude: /node_modules/,
+        loader: "file-loader?publicPath=/"
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "css-loader"]
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        loaders: ["react-hot-loader/webpack", "babel-loader"]
       }
     ]
   },
